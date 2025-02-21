@@ -1,1 +1,364 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Marcel Hinsche's website." />
+    <meta name="keywords" content="research, publications" />
+    <meta name="author" content="Marcel Hinsche" />
+    <link rel="icon" href="favicon.ico" />
+    <title>Marcel Hinsche</title>
+
+    <link rel="stylesheet" href="https://use.typekit.net/due3qzw.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      /* Apply the custom font */
+      body {
+        font-family: "Your Custom Font", sans-serif; /* Replace with the actual font name */
+      }
+    </style>
+  </head>
+
+  <body class="bg-white text-gray-900">
+    <header
+      class="max-w-4xl mx-auto py-6 flex flex-col md:flex-row md:justify-between md:items-center"
+    >
+      <!-- Left side: Name and Subtitle -->
+      <div class="pl-4 md:pl-0">
+        <h1 class="text-3xl font-bold">Marcel Hinsche</h1>
+        <h2 class="text-xl text-gray-600 mt-2">
+          PhD student in quantum computing @ Freie Universität Berlin
+        </h2>
+      </div>
+
+      <!-- Right side: Contact Links with Icons (Now Centered on Small Screens) -->
+      <div class="mt-4 md:mt-0 flex flex-col items-center md:items-end">
+        <a
+          href="mailto:m.hinsche@fu-berlin.de"
+          class="text-blue-500 hover:underline flex items-center gap-2"
+        >
+          <!-- Email Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21.75 7.5v9a2.25 2.25 0 0 1-2.25 2.25H4.5A2.25 2.25 0 0 1 2.25 16.5v-9m19.5 0A2.25 2.25 0 0 0 19.5 5.25h-15A2.25 2.25 0 0 0 2.25 7.5m19.5 0v.764a2.25 2.25 0 0 1-.937 1.821L13.5 14.25m-3 0-7.313-4.165A2.25 2.25 0 0 1 2.25 8.264V7.5"
+            />
+          </svg>
+          Email
+        </a>
+
+        <a
+          href="https://scholar.google.com/citations?user=LncHmgoAAAAJ&hl=en"
+          target="_blank"
+          class="text-blue-500 hover:underline flex items-center gap-2 mt-2"
+        >
+          <!-- Google Scholar Icon -->
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="2"
+            stroke="currentColor"
+            class="w-5 h-5"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M12 2.25a8.969 8.969 0 0 0-6.364 2.636A8.968 8.968 0 0 0 3 12c0 2.486.976 4.867 2.636 6.364A8.968 8.968 0 0 0 12 21.75a8.968 8.968 0 0 0 6.364-2.636A8.968 8.968 0 0 0 21 12a8.968 8.968 0 0 0-2.636-6.364A8.968 8.968 0 0 0 12 2.25zm0 3.375c.186 0 .372.07.514.21l2.771 2.77a.75.75 0 0 1-1.061 1.06l-2.27-2.27v5.647a.75.75 0 1 1-1.5 0V7.395l-2.27 2.27a.75.75 0 0 1-1.06-1.06l2.77-2.77a.75.75 0 0 1 .516-.21zM7.5 16.5a4.5 4.5 0 0 1 9 0 .75.75 0 0 1-1.5 0 3 3 0 0 0-6 0 .75.75 0 0 1-1.5 0z"
+            />
+          </svg>
+          Google Scholar
+        </a>
+      </div>
+    </header>
+
+    <main class="max-w-4xl mx-auto p-6">
+      <section
+        class="flex flex-col md:flex-row items-center md:items-start gap-6 h-full"
+      >
+        <img
+          src="./profile_pic.jpg"
+          alt="My Picture"
+          class="w-60 h-auto rounded-xl object-cover"
+        />
+        <div class="flex flex-col justify-between h-full">
+          <p>
+            I am a PhD student in
+            <a
+              href="https://www.physik.fu-berlin.de/en/einrichtungen/ag/ag-eisert/index.html"
+              class="text-blue-500 hover:underline"
+              >Jens Eisert's group</a
+            >
+            at the Dahlem Center for Complex Quantum Systems, Freie Universität
+            Berlin.
+          </p>
+          <p class="mt-3">
+            My research sits at the intersection of quantum information theory,
+            learning theory, and complexity theory. I explore questions like:
+            What resources are required to learn about a specific aspect of an
+            unknown quantum system? I am also interested in classical simulation
+            of quantum computation, verification of quantum computation, quantum
+            algorithms and quantum error correction.
+          </p>
+
+          <p class="mt-3">
+            You can get in touch with me via
+            <a
+              href="mailto:m.hinsche@fu-berlin.de"
+              class="text-blue-500 hover:underline"
+              >email</a
+            >.
+          </p>
+        </div>
+      </section>
+
+      <section class="mt-8">
+        <h2 class="text-2xl font-semibold border-b pb-2">Publications</h2>
+        <ul class="mt-4 space-y-1 pl-4">
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >Dynamic parameterized quantum circuits: expressive and
+              barren-plateau free</span
+            ><br />
+            Abhinav Deshpande,
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Sona Najafi, Kunal Sharma, Ryan Sweke, Christa Zoufal <br />
+            <a
+              href="https://arxiv.org/abs/2411.05760"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2411.05760
+            </a>
+          </li>
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >Interactive proofs for verifying (quantum) learning and
+              testing</span
+            ><br />
+            Matthias Caro, Jens Eisert,
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Marios Ioannou, Alexander Nietner, Ryan Sweke <br />
+            <a
+              href="https://arxiv.org/abs/2410.23969"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2410.23969
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold">Single-copy stabilizer testing</span><br />
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Jonas Helsen <br />
+            Accepted in STOC 2025.
+            <a
+              href="https://arxiv.org/abs/2410.07986"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2410.07986
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >Efficient distributed inner product estimation via Pauli sampling
+              Authors </span
+            ><br />
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Marios Ioannou, Sofiene Jerbi, Lorenzo Leone, Jens Eisert, Jose
+            Carrasco <br />
+            <a
+              href="https://arxiv.org/abs/2405.06544"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2405.06544
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >Verifiable measurement-based quantum random sampling with trapped
+              ions</span
+            ><br />
+            Martin Ringbauer,
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Thomas Feldker, Paul Faehrmann, Juani Bermejo-Vega, Claire Edmunds,
+            Lukas Postler, Roman Stricker, Christian D Marciniak, Michael Meth,
+            Ivan Pogorelov, Rainer Blatt, Philipp Schindler, Jens Eisert, Thomas
+            Monz, Dominik Hangleiter
+            <br />
+            <a
+              href="https://doi.org/10.1038/s41467-024-55342-3"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              Nature Communications 16, 106 (2025)
+            </a>
+            .
+            <a
+              href="https://arxiv.org/abs/2307.14424"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2307.14424
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >Classical Verification of Quantum Learning </span
+            ><br />
+            Matthias Caro,
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Marios Ioannou, Alexander Nietner, Ryan Sweke
+            <br />
+            <a
+              href="https://doi.org/10.4230/LIPIcs.ITCS.2024.24"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              15th Innovations in Theoretical Computer Science Conference (ITCS
+              2024)
+            </a>
+            .
+            <a
+              href="https://arxiv.org/abs/2306.04843"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2306.04843
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >On the average-case complexity of learning output distributions
+              of quantum circuits </span
+            ><br />
+            Alexander Nietner, Marios Ioannou, Ryan Sweke, Richard Kueng, Jens
+            Eisert,
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Jonas Haferkamp
+            <br />
+
+            <a
+              href="https://arxiv.org/abs/2305.05765"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2305.05765
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >Shallow shadows: Expectation estimation using low-depth random
+              Clifford circuits</span
+            ><br />
+            Christian Bertoni, Jonas Haferkamp,
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Marios Ioannou, Jens Eisert, Hakop Pashayan <br />
+            <a
+              href="https://doi.org/10.1103/PhysRevLett.133.020602"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              Physical Review Letters 133, 020602 (2024)
+            </a>
+            .
+            <a
+              href="https://arxiv.org/abs/2209.12924"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2209.12924
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >One <i>T</i> Gate Makes Distribution Learning Hard</span
+            ><br />
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Marios Ioannou, Alexander Nietner, Jonas Haferkamp, Yihui Quek,
+            Dominik Hangleiter, Jean-Pierre Seifert, Jens Eisert, Ryan Sweke
+            <br />
+            <a
+              href="https://doi.org/10.1103/PhysRevLett.130.240602"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              Physical Review Letters 130, 240602 (2023)
+            </a>
+            .
+            <a
+              href="https://arxiv.org/abs/2307.14424"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2207.03140
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >Learnability of the output distributions of local quantum
+              circuits </span
+            ><br />
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Marios Ioannou, Alexander Nietner, Jonas Haferkamp, Yihui Quek,
+            Dominik Hangleiter, Jean-Pierre Seifert, Jens Eisert, Ryan Sweke
+            <br />
+            <a
+              href="https://arxiv.org/abs/2110.05517"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2110.05517
+            </a>
+          </li>
+
+          <li class="bg-white p-2 rounded-lg">
+            <span class="font-bold"
+              >Quantum Computational Advantage via High-Dimensional Gaussian
+              Boson Sampling</span
+            ><br />
+            Abhinav Deshpande, Arthur Mehta, Trevor Vincent, Nicolas Quesada,
+            <span class="underline decoration-gray-400">Marcel Hinsche</span>,
+            Marios Ioannou, Lars Madsen, Jonathan Lavoie, Haoyu Qi, Jens Eisert,
+            Dominik Hangleiter, Bill Fefferman, Ish Dhand
+            <br />
+            <a
+              href="https://doi.org/10.1126/sciadv.abi7894"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              Science Advances 8, eabi7894 (2022)
+            </a>
+            .
+            <a
+              href="https://arxiv.org/abs/2102.12474"
+              target="_blank"
+              class="text-blue-500 hover:underline"
+            >
+              arXiv:2102.12474
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+  </body>
+</html>
