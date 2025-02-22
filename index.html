@@ -6,7 +6,7 @@
     <meta name="description" content="Marcel Hinsche's website." />
     <meta name="keywords" content="research, publications" />
     <meta name="author" content="Marcel Hinsche" />
-    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" href="images/favicon.ico" />
     <title>Marcel Hinsche</title>
 
     <link
@@ -36,7 +36,7 @@
       </div>
 
       <!-- Right side: Contact Links with Icons (Now Centered on Small Screens) -->
-      <div class="mt-4 md:mt-0 flex flex-col items-center md:items-start">
+      <div class="mt-4 md:mt-0 flex flex-col mx-auto md:mx-0 items-start pr-4">
         <a
           href="mailto:m.hinsche@fu-berlin.de"
           class="text-emerald-600 hover:underline flex items-center gap-2"
@@ -44,16 +44,18 @@
           <!-- Email Icon -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
+            viewBox="0 0 512 512"
+            width="24"
+            height="24"
+            fill="currentColor"
             stroke="currentColor"
-            class="w-5 h-5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M21.75 7.5v9a2.25 2.25 0 0 1-2.25 2.25H4.5A2.25 2.25 0 0 1 2.25 16.5v-9m19.5 0A2.25 2.25 0 0 0 19.5 5.25h-15A2.25 2.25 0 0 0 2.25 7.5m19.5 0v.764a2.25 2.25 0 0 1-.937 1.821L13.5 14.25m-3 0-7.313-4.165A2.25 2.25 0 0 1 2.25 8.264V7.5"
+              d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48L48 64zM0 176L0 384c0 35.3 28.7 64 64 64l384 0c35.3 0 64-28.7 64-64l0-208L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"
             />
           </svg>
           Email
@@ -64,19 +66,20 @@
           target="_blank"
           class="text-emerald-600 hover:underline flex items-center gap-2 mt-2"
         >
-          <!-- Google Scholar Icon -->
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke-width="2"
+            viewBox="0 0 512 512"
+            width="24"
+            height="24"
+            fill="currentColor"
             stroke="currentColor"
-            class="w-5 h-5"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
           >
+            <!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.-->
             <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              d="M12 2.25a8.969 8.969 0 0 0-6.364 2.636A8.968 8.968 0 0 0 3 12c0 2.486.976 4.867 2.636 6.364A8.968 8.968 0 0 0 12 21.75a8.968 8.968 0 0 0 6.364-2.636A8.968 8.968 0 0 0 21 12a8.968 8.968 0 0 0-2.636-6.364A8.968 8.968 0 0 0 12 2.25zm0 3.375c.186 0 .372.07.514.21l2.771 2.77a.75.75 0 0 1-1.061 1.06l-2.27-2.27v5.647a.75.75 0 1 1-1.5 0V7.395l-2.27 2.27a.75.75 0 0 1-1.06-1.06l2.77-2.77a.75.75 0 0 1 .516-.21zM7.5 16.5a4.5 4.5 0 0 1 9 0 .75.75 0 0 1-1.5 0 3 3 0 0 0-6 0 .75.75 0 0 1-1.5 0z"
+              d="M390.9 298.5c0 0 0 .1 .1 .1c9.2 19.4 14.4 41.1 14.4 64C405.3 445.1 338.5 512 256 512s-149.3-66.9-149.3-149.3c0-22.9 5.2-44.6 14.4-64h0c1.7-3.6 3.6-7.2 5.6-10.7c4.4-7.6 9.4-14.7 15-21.3c27.4-32.6 68.5-53.3 114.4-53.3c33.6 0 64.6 11.1 89.6 29.9c9.1 6.9 17.4 14.7 24.8 23.5c5.6 6.6 10.6 13.8 15 21.3c2 3.4 3.8 7 5.5 10.5zm26.4-18.8c-30.1-58.4-91-98.4-161.3-98.4s-131.2 40-161.3 98.4L0 202.7 256 0 512 202.7l-94.7 77.1z"
             />
           </svg>
           Google Scholar
@@ -89,9 +92,9 @@
         class="flex flex-col md:flex-row items-center md:items-start gap-6 h-full"
       >
         <img
-          src="./profile_pic.jpg"
+          src="images/profile_pic.jpg"
           alt="My Picture"
-          class="w-60 h-auto rounded-xl object-cover"
+          class="w-auto h-60 rounded-xl object-cover"
         />
         <div class="flex flex-col justify-between h-full">
           <p>
@@ -127,7 +130,7 @@
       <section class="mt-8">
         <h2 class="text-2xl font-semibold border-b pb-2">Publications</h2>
         <ul class="mt-4 space-y-1 pl-4">
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >Dynamic parameterized quantum circuits: expressive and
               barren-plateau free</span
@@ -143,7 +146,7 @@
               arXiv:2411.05760
             </a>
           </li>
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >Interactive proofs for verifying (quantum) learning and
               testing</span
@@ -160,7 +163,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold">Single-copy stabilizer testing</span><br />
             <span class="underline decoration-gray-400">Marcel Hinsche</span>,
             Jonas Helsen <br />
@@ -174,7 +177,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >Efficient distributed inner product estimation via Pauli sampling
               Authors </span
@@ -191,7 +194,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >Verifiable measurement-based quantum random sampling with trapped
               ions</span
@@ -220,7 +223,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >Classical Verification of Quantum Learning </span
             ><br />
@@ -246,7 +249,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >On the average-case complexity of learning output distributions
               of quantum circuits </span
@@ -266,7 +269,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >Shallow shadows: Expectation estimation using low-depth random
               Clifford circuits</span
@@ -291,7 +294,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >One <i>T</i> Gate Makes Distribution Learning Hard</span
             ><br />
@@ -316,7 +319,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >Learnability of the output distributions of local quantum
               circuits </span
@@ -334,7 +337,7 @@
             </a>
           </li>
 
-          <li class="bg-white p-2 rounded-lg">
+          <li class="p-2">
             <span class="font-bold"
               >Quantum Computational Advantage via High-Dimensional Gaussian
               Boson Sampling</span
